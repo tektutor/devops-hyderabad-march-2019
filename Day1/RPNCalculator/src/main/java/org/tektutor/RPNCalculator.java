@@ -17,30 +17,6 @@ public class RPNCalculator {
 		firstNumber = numberStack.pop();
 	}
 
-	private void add() {
-		extractInputs();
-		result = firstNumber + secondNumber;
-		numberStack.push ( result );
-	}
-
-	private void subtract() {
-		extractInputs();
-		result = firstNumber - secondNumber;
-		numberStack.push ( result );
-	}
-
-	private void multiply() {
-		extractInputs();
-		result = firstNumber * secondNumber;
-		numberStack.push ( result );
-	}
-
-	private void divide() {
-		extractInputs();
-		result = firstNumber / secondNumber;
-		numberStack.push ( result );
-	}
-
 	private boolean isMathOperator( String token ) {
 		String mathOperators = "+-*/";
 		return mathOperators.contains ( token );
