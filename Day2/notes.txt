@@ -1,0 +1,41 @@
+Download Maven 3.6.0 zip and extracted into the below path 
+C:\Users\<your-one-bank-id>\Downloads\apache-maven-3.6.0
+
+Install JDK 1.8 from Software Center
+
+Install git from Software Center
+
+Configur Proxy in Maven
+You need to add the below proxy configuration in settings.xml under
+
+C:\Users\<your-one-bank-id>\Downloads\apache-maven-3.6.0\conf
+
+Under the proxies section, you need the below proxy configuration
+
+<proxy>
+	<id>proxy-configuration</id>
+	<active>true</active>
+	<protocol>http</protocol>
+	<host>10.20.30.40</host>
+	<port>8080</port>
+</proxy>
+
+You need to ensure that the below path are added into Your environment Settings
+
+PATH="C:\Program Files\Java\jdk1.8.0_181\bin"
+PATH=C:\Users\<your-one-bank-id>\Downloads\apache-maven-3.6.0\bin
+JAVA_HOME="C:\Program Files\Java\jdk1.8.0_181"
+M2_HOME=C:\Users\<your-one-bank-id>\Downloads\apache-maven-3.6.0
+
+You can download zip file that has the lab exercises from below URL
+https://github.com/tektutor/devops-hyderabad-march-2019
+
+Once the zip file is extracted, from command prompt you should be able to compile the project
+C:\Users\<your-one-bank-id>\Downloads\devops-hyderabad-march-2019
+
+cd Day1\Hello
+mvn clean install
+
+
+
+

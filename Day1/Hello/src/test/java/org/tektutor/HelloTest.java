@@ -11,7 +11,7 @@ public class HelloTest {
 		Hello hello = new Hello();
 
 		String actualResponse = hello.sayHello();
-		String expectedResponse = "Hello DevOps";
+		String expectedResponse = "Hello DevOps!";
 
 		assertEquals ( expectedResponse, actualResponse );
 
